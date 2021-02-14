@@ -20,7 +20,7 @@ title                    : "직장인을 위한 파이썬"
 title_separator          : "-"
 subtitle                 : "문과 출신 최과장의 사무직 코딩 노하우" 
 name                     : "최과장"
-description              : 
+description              : "문과 출신 최과장의 사무직 코딩 노하우" 
 url                      : # the base hostname & protocol for your site e.g. "https://maeng-gun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "최과장"
   avatar           : "/assets/images/man-5745053_1920.png"
-  bio              : "금융회사에서 사무직으로 일하고 있습니다. 어쩌다 독학으로 익힌 파이썬을 업무에 사용하는 경험들을 기록하고 있습니다."
+  bio              : "금융회사에서 사무직으로 일하고 있습니다. 어쩌다 독학으로 파이썬을 익혀 업무에 활용한 경험들을 기록하고 있습니다."
   location         : "Republic of Korea"
   email            : 
   links:
