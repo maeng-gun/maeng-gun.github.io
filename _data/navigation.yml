@@ -3,9 +3,9 @@ main:
   - title: "파이썬 기초"
     url: /categories/파이썬 기초
   - title: "판다스"
-    url: /categories/파이썬 기초
+    url: /categories/판다스
   - title: "엑셀 자동화"
-    url: /categories/파이썬 기초
+    url: /categories/엑셀 자동화
   - title: "카테고리"
     url: /categories/
   - title: "태그"
