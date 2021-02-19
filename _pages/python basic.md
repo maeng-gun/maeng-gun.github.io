@@ -1,7 +1,10 @@
 ---
 title: "파이썬 기초"
-permalink: /categories/파이썬 기초/
-layout: category
+permalink: /파이썬 기초/
+layout: single
 author_profile: true
-taxonomy: 파이썬 기초
 ---
+
+## 1. 파이썬 시작하기  
+
+### [코딩, 그거 먹는건가요? (feat. 직장인)](https://maeng-gun.github.io/파이썬%20기초/grammer1/)
