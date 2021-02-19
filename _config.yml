@@ -287,3 +287,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
