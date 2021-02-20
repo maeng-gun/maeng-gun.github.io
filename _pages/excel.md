@@ -1,7 +1,10 @@
 ---
 title: "엑셀 자동화"
-permalink: /categories/엑셀 자동화/
-layout: category
+permalink: /excel
+layout: single
+toc : true
+toc_sticky : true
 author_profile: true
-taxonomy: 엑셀 자동화
 ---
+
+## 1. 엑셀 자동화 시작하기  

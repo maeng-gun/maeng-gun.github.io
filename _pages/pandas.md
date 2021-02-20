@@ -1,7 +1,12 @@
 ---
 title: "판다스"
-permalink: /categories/판다스/
-layout: category
+permalink: /pandas
+toc : true
+toc_sticky : true
+layout: single
 author_profile: true
-taxonomy: 판다스
 ---
+
+## 1. 판다스 시작하기  
+
+### [엑셀 보다 파이썬! 판다스를 배워보자](/pandas/pandas1)

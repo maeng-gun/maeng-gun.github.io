@@ -1,16 +1,14 @@
 # main links
 main:
   - title: "파이썬 기초"
-    url: /파이썬 기초
+    url: /python
   - title: "판다스"
-    url: /categories/판다스
+    url: /pandas
   - title: "엑셀 자동화"
-    url: /categories/엑셀 자동화
-  - title: "카테고리"
+    url: /excel
+  - title: "카테고리별"
     url: /categories/
-  - title: "태그"
-    url: /tags/
-  - title: "연도별 포스트"
+  - title: "연도별"
     url: /posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/
