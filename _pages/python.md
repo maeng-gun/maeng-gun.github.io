@@ -9,4 +9,4 @@ author_profile: true
 
 ## 1. 파이썬 시작하기  
 
-### [코딩, 그거 먹는건가요? (feat. 직장인)](/python/grammer1/)
+### [(1) 코딩, 그거 먹는건가요? (feat. 직장인)](/python/grammer1/)
