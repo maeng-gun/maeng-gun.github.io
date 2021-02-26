@@ -14,7 +14,7 @@ tags:
 read_excel 함수를 사용해 다음과 같이 엑셀 파일을 불러와보자. 
 
 <div class="prompt input_prompt">
-In&nbsp;[4]:
+In&nbsp;[1]:
 </div>
 
 ```python
@@ -23,7 +23,7 @@ book = pd.read_excel('../assets/excel/주식 종목 리스트.xlsx')
 ```
 
 <div class="prompt output_prompt">
-Out&nbsp;[4]:
+Out&nbsp;[1]:
 </div>
 
 
@@ -42,58 +42,7 @@ ValueError                                Traceback (most recent call last)
 {:.output_traceback_line}
 
 ```
-<ipython-input-4-4f65ed1e81a4> in <module>
-      1 import pandas as pd
-----> 2 book = pd.read_excel('../assets/excel/주식 종목 리스트.xlsx')
-
-```
-
-{:.output_traceback_line}
-
-```
-C:\anaconda3\lib\site-packages\pandas\util\_decorators.py in wrapper(*args, **kwargs)
-    297                 )
-    298                 warnings.warn(msg, FutureWarning, stacklevel=stacklevel)
---> 299             return func(*args, **kwargs)
-    300 
-    301         return wrapper
-
-```
-
-{:.output_traceback_line}
-
-```
-C:\anaconda3\lib\site-packages\pandas\io\excel\_base.py in read_excel(io, sheet_name, header, names, index_col, usecols, squeeze, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, thousands, comment, skipfooter, convert_float, mangle_dupe_cols, storage_options)
-    334     if not isinstance(io, ExcelFile):
-    335         should_close = True
---> 336         io = ExcelFile(io, storage_options=storage_options, engine=engine)
-    337     elif engine and engine != io.engine:
-    338         raise ValueError(
-
-```
-
-{:.output_traceback_line}
-
-```
-C:\anaconda3\lib\site-packages\pandas\io\excel\_base.py in __init__(self, path_or_buffer, engine, storage_options)
-   1069                 ext = "xls"
-   1070             else:
--> 1071                 ext = inspect_excel_format(
-   1072                     content=path_or_buffer, storage_options=storage_options
-   1073                 )
-
-```
-
-{:.output_traceback_line}
-
-```
-C:\anaconda3\lib\site-packages\pandas\io\excel\_base.py in inspect_excel_format(path, content, storage_options)
-    963             return "xls"
-    964         elif not peek.startswith(ZIP_SIGNATURE):
---> 965             raise ValueError("File is not a recognized excel file")
-    966 
-    967         # ZipFile typing is overly-strict
-
+(중간 생략)
 ```
 
 {:.output_traceback_line}
@@ -112,7 +61,7 @@ openpyxl 이라는 '엑셀 자동화' 라이브러리의 존재를 알게됐다.
 다음과 같이 엑셀파일을 여는 명령을 실행해보았다.
 
 <div class="prompt input_prompt">
-In&nbsp;[15]:
+In&nbsp;[2]:
 </div>
 
 ```python
@@ -121,7 +70,7 @@ book = opx.load_workbook(r'../assets/excel/주식 종목 리스트.xlsx')
 ```
 
 <div class="prompt output_prompt">
-Out&nbsp;[15]:
+Out&nbsp;[2]:
 </div>
 
 
@@ -140,69 +89,7 @@ BadZipFile                                Traceback (most recent call last)
 {:.output_traceback_line}
 
 ```
-<ipython-input-15-af2de0861910> in <module>
-      1 import openpyxl as opx
-----> 2 book = opx.load_workbook(r'../assets/excel/주식 종목 리스트.xlsx')
-
-```
-
-{:.output_traceback_line}
-
-```
-~\anaconda3\lib\site-packages\openpyxl\reader\excel.py in load_workbook(filename, read_only, keep_vba, data_only, keep_links)
-    311 
-    312     """
---> 313     reader = ExcelReader(filename, read_only, keep_vba,
-    314                         data_only, keep_links)
-    315     reader.read()
-
-```
-
-{:.output_traceback_line}
-
-```
-~\anaconda3\lib\site-packages\openpyxl\reader\excel.py in __init__(self, fn, read_only, keep_vba, data_only, keep_links)
-    122     def __init__(self,  fn, read_only=False, keep_vba=KEEP_VBA,
-    123                   data_only=False, keep_links=True):
---> 124         self.archive = _validate_archive(fn)
-    125         self.valid_files = self.archive.namelist()
-    126         self.read_only = read_only
-
-```
-
-{:.output_traceback_line}
-
-```
-~\anaconda3\lib\site-packages\openpyxl\reader\excel.py in _validate_archive(filename)
-     94             raise InvalidFileException(msg)
-     95 
----> 96     archive = ZipFile(filename, 'r')
-     97     return archive
-     98 
-
-```
-
-{:.output_traceback_line}
-
-```
-~\anaconda3\lib\zipfile.py in __init__(self, file, mode, compression, allowZip64, compresslevel, strict_timestamps)
-   1267         try:
-   1268             if mode == 'r':
--> 1269                 self._RealGetContents()
-   1270             elif mode in ('w', 'x'):
-   1271                 # set the modified flag so central directory gets written
-
-```
-
-{:.output_traceback_line}
-
-```
-~\anaconda3\lib\zipfile.py in _RealGetContents(self)
-   1334             raise BadZipFile("File is not a zip file")
-   1335         if not endrec:
--> 1336             raise BadZipFile("File is not a zip file")
-   1337         if self.debug > 1:
-   1338             print(endrec)
+(중간 생략)
 
 ```
 
@@ -238,7 +125,7 @@ BadZipFile: File is not a zip file
 서두에서 사용했던 <주식 종목 리스트>(*[내려받기](/asset/excel/주식 종목 리스트.xlsx)*) 엑셀파일을 열어보자. 주피터 노트북에서 아래의 코드를 실행하면, 갑자기 엑셀프로그램이 알아서 켜지면서 해당 파일이 화면에 나타난다!
 
 <div class="prompt input_prompt">
-In&nbsp;[25]:
+In&nbsp;[3]:
 </div>
 
 ```python
@@ -256,7 +143,7 @@ book = xw.Book('../assets/excel/주식 종목 리스트.xlsx')
 (물론 DRM이 안걸린 보통의 엑셀파일은 판다스로도 잘 열린다)
 
 <div class="prompt input_prompt">
-In&nbsp;[26]:
+In&nbsp;[4]:
 </div>
 
 ```python
@@ -267,7 +154,7 @@ df
 ```
 
 <div class="prompt output_prompt">
-Out&nbsp;[26]:
+Out&nbsp;[4]:
 </div>
 
 
@@ -360,7 +247,7 @@ Out&nbsp;[26]:
 판다스 명령어를 활용해 시가총액의 단위를 백만원에서 억원으로 바꾼 후, 엑셀파일에 그대로 붙여넣어보자. 실행되고 있는 엑셀프로그램 상의 표가 바뀐 것을 확인할 수 있다
 
 <div class="prompt input_prompt">
-In&nbsp;[27]:
+In&nbsp;[5]:
 </div>
 
 ```python
@@ -370,7 +257,7 @@ df
 ```
 
 <div class="prompt output_prompt">
-Out&nbsp;[27]:
+Out&nbsp;[5]:
 </div>
 
 
@@ -459,7 +346,7 @@ Out&nbsp;[27]:
 
 
 <div class="prompt input_prompt">
-In&nbsp;[28]:
+In&nbsp;[6]:
 </div>
 
 ```python
