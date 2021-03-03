@@ -24,7 +24,7 @@ description              : "직장인을 위한 파이썬 : 문과 출신 최과
 url                      : "https://maeng-gun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "maeng-gun/maeng-gun.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/man-5745053_1920.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -76,8 +76,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : 
- - "/assets/images/man-5745053_1920.png"
+og_image : /assets/images/man-5745053_1920.png
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
