@@ -10,7 +10,5 @@ main:
     url: /categories/
   - title: "연도별"
     url: /posts/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
