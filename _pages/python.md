@@ -18,6 +18,7 @@ author_profile: true
 ## 2. 파이썬 기초 문법 (1)
 
 ### [1) 변수(variable)를 만들고 출력해보자](/python/python6/)
+### [2) 파이썬 기본 자료형(data type)의 종류](/python/python7/)
 
 ## 3. 파이썬 기초 문법 (2)
 
